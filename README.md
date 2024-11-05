@@ -1,4 +1,4 @@
-# Qyoh's ~~stolen~~ Forked projects
+# Z's Forks
 
 - [Tinnitus](tinnitus)
 - [Slop](slop)
