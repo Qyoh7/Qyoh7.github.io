@@ -1,6 +1,8 @@
-#theme: jekyll-theme-minimal
+title: qyoh
 
 #jekyll
+plugins:
+  - jekyll-feed
 lsi: false
 safe: true
 source: master
