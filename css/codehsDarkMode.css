@@ -1,12 +1,19 @@
 /* ==UserStyle==
+@name         CodeHS Dark Theme
+@version      20241202.23.41
+@namespace    https://userstyles.world/user/Qyoh
+@description  a dark theme for codehs. my eyes can work again.Made by starchyunderscore on github and updated by me!
+@author       Qyoh
+@license      do whatever the fuck you want.
+==/UserStyle== */
+/* ==UserStyle==
 @name           codehs.com - 10/8/2022, 6:15:18 PM
 @namespace      github.com/openstyles/stylus
 @version        1.0.0
-@description    A new userstyle
-@author         Me
+@description    Dark theme for CodeHS
+@author         Qyoh/starchyunderscore
 ==/UserStyle== */
 @-moz-document domain("codehs.com") {
-
     .collapse,
     .navbar-collapse,
     .navbar-brand {
@@ -130,21 +137,64 @@
         ;
         font-size: 12px;
     }
+
+    /* homepage(classes)
+TODO: convert assignments and lesson start page */
+    #user-page #wrapper #userpage-content {
+        background-color: #23272e;
+    }
+
+    #user-page {
+        background-color: #23272e;
+    }
+    #user-page #wrapper {
+        background-color: var(--bg-surface, #23272e);
+        .course-list-tile {
+            background-color: var(--bg-surface, #23272e);
+            border: none;
+        }
+    }
+
+    .h1,
+    h1 {
+        color: #fff;
+    }
+
+    #user-page #wrapper .course-list-tile #percentage-passed {
+        color: var(--on-bg-color-high, #fff);
+    }
+
+    #user-section-name {
+        color: var(--on-bg-color-high, #fff);
+    }
+
+
     .je {
         background-color: #23272e;
     }
     .J {
         background-color: #23272e;
     }
+
+    /* sliders/resizers */
     .zo {
         background-color: #23272e
     }
+    .Do {
+        border-left: black;
+        border-right: black;
+    }
+
     /* Lesson title*/
     .Po {
         color: white;
     }
+
     /* left navbar/files */
     .t {
+        background-color: #28384a;
+    }
+    .l .c {
         background-color: #28384a;
     }
     #nav-search-container #nav-search-trigger {
@@ -156,12 +206,25 @@
     #editor-bottombar-nav {
         background-color: #23272e;
     }
-    
+
     .l li {
         color: white;
     }
-    
-    
+
+    /* quiz */
+    .quiz-questions li {
+        background-color: #23272e;
+    }
+    .take-quiz-page .quiz-questions > li {
+        background-color: #23272e;
+    }
+    .take-quiz-page {
+        background-color: #23272e;
+    }
+    .take-quiz-page .stats-options-container {
+        background-color: #23272e;
+    }
+
     /*directions*/
     #directions-modal .directions {
         background-color: #23272e;
@@ -174,12 +237,68 @@
         background-color: #23272e;
         border-color: #23272e;
     }
+
+    /* assignment tab */
+    .n {
+        background-color: #23272e;
+    }
+
+    /* grade tab */
+    #lms-grading-tab #current-grade-status .grade-score-container {
+        background-color: #23272e;
+    }
+    #lms-grading-tab #current-grade-status:before {
+        background-color: #23272e;
+    }
+
+    /* docs tab */
+    .loaded {
+        background-color: #23272e;
+    }
+
+    /* test cases tab 
+
+TODO: remove table: hilariously useless and redundant
+TODO: convert pass/fail popup to dark
+TODO: steal border colors from other dark mode hehehehehe 
+
+*/
+    .sticky-header {
+        background-color: #23272e;
+    }
+    pre.rounded {
+        color: white;
+    }
+    .table-header-sticky {
+        background-color: #23272e;
+    }
+    .ui-widget-content {
+        background: #23272e;
+        color: #fff;
+    }
+    .modal-content {
+        background-color: #23272e;
+    }
+    #autograder-modal {
+        color: #909090;
+        border: 1px solid rgba(0,0,0,0);
+    }
+    .modal-header {
+        border-bottom: none;
+    }
+    .modal-footer {
+        border-top: none;
+    }
+
+
     body {
-       color: white;
+        color: white;
     }
     pre {
-       background-color: #23272e;
+        background-color: #23272e;
     }
+
+    /*TODO: add styling for all code elements*/
     pre code {
         color: white;
     }
