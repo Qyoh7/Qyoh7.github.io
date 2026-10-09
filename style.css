@@ -1,0 +1,40 @@
+@font-face {
+  font-family: "Libron";
+  src: url("./fonts/Libron-Regular.ttf")
+}
+
+:root
+{
+    --fg1: #ebdbb2;
+}
+
+body
+{
+    color: var(--fg1);
+    width: 480px;
+    margin: auto;
+    position: relative;
+    line-height: 28px;
+    margin-top: 35px;
+    font-family: 'Libron';
+    background-color: #282828;
+}
+
+li
+{
+    list-style-type: square;
+}
+
+
+
+
+
+
+a
+{
+    color: #458588
+}
+a:visited
+{
+    color: #b16286;
+}
